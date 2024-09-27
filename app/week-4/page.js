@@ -7,12 +7,12 @@ export default function AdvCounterPage(){
 
     const [count, setCount] = useState(1);
 
-    const incrementCounter = () => {
+    const increment = () => {
         if(count < 20) (
             setCount(count + 1)
         );
     }
-    const decrementCounter = () => {
+    const decrement = () => {
         if(count > 1) (
             setCount(count - 1)
         );
@@ -22,8 +22,8 @@ export default function AdvCounterPage(){
         <main className="p-5 content-center text-center">
             <Counter
                 currentCount={count}
-                incrementCounterFunction={incrementCounter}
-                decrementCounterFunction={decrementCounter}
+                incrementCounterFunction={increment}
+                decrementCounterFunction={decrement}
             />
         </main>
     )
